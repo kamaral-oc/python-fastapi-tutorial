@@ -21,10 +21,13 @@ class Item(BaseModel):
         description="Price must be greater than zero"
     )
     # Optional field with a default value of None
-    is_offer: Union[bool, None] = Field(
+    in_stock: Union[bool, None] = Field(
         None, 
-        description="Whether the item is an offer"
+        description="Stock availability"
     )
+    # Configuration for the Pydantic model to forbid extra fields
+    class Config:
+        extra = "forbid"
 
 # Define a root endpoint that returns a greeting message
 @app.get("/")
