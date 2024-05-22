@@ -1,5 +1,8 @@
 # python-fastapi-tutorial
 
+Google doc meeting notes
+https://docs.google.com/document/d/1T-Oft-LfFHcmyO2EgurmkWp-QmF5YslQ1oRxKkYQ03o/edit
+
 Docker
 https://fastapi.tiangolo.com/deployment/docker/
 
