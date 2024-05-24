@@ -24,3 +24,7 @@ http://localhost:80
 Swagger documentation
 
 http://localhost:80/docs
+
+## TODO
+
+Install and configure Alembic to support migrations
