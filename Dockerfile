@@ -1,10 +1,10 @@
+FROM python:3.9
+
 # Use ARG to specify user and group details
 ARG USER_NAME=appuser
 ARG GROUP_NAME=appgroup
 ARG UID=1001
 ARG GID=1001
-
-FROM python:3.9
 
 # Create a non-root user and group with a specific UID and GID
 RUN addgroup --gid ${GID} ${GROUP_NAME} && \

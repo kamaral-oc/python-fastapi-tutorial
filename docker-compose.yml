@@ -6,3 +6,15 @@ services:
     ports:
       - "80:80"
     command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80", "--reload"]
+
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: fastapi
+      POSTGRES_PASSWORD: fastapi
+      POSTGRES_DB: fastapi_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
